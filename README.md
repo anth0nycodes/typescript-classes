@@ -50,7 +50,7 @@ Progressive exercises that build on each concept:
 
 ```bash
 git clone <repository-url>
-cd typescript-classes
+cd typescript-oop-guide
 ```
 
 2. Install dependencies:

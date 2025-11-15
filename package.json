@@ -1,15 +1,19 @@
 {
-  "name": "typescript-classes",
+  "name": "typescript-oop-guide",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.ts",
+  "description": "A comprehensive guide to learning Object-Oriented Programming in TypeScript",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx ts-node src/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "oop",
+    "object-oriented-programming",
+    "learning",
+    "tutorial"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@types/node": "^24.10.1",
