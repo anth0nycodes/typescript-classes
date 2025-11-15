@@ -22,6 +22,7 @@ All documentation is organized in the [`docs/`](docs/) folder:
 9. [**Interfaces & Polymorphism**](docs/09-interfaces-polymorphism.md) - Contracts, multiple implementations, and polymorphism
 
 **Quick Reference:**
+
 - [**Keywords Reference**](docs/keywords-reference.md) - Complete reference for all OOP keywords (class, new, this, static, extends, super, etc.)
 
 ### Exercises (6 Challenges)
@@ -69,20 +70,43 @@ npm install
    - Use the [Keywords Reference](docs/keywords-reference.md) for quick lookups
 
 2. **Complete the exercises** from [`exercises.md`](exercises.md):
-   - Create separate `.ts` files for each exercise (e.g., `exercise1.ts`)
+   - Create `.ts` files in the `src/` folder for each exercise (e.g., `src/exercise1.ts`, `src/exercise2.ts`)
    - Complete one exercise at a time
-   - Test your code by running: `npx ts-node exerciseX.ts`
+   - Run your solutions with: `npx ts-node src/exercise1.ts` (exercise1 used as example here)
+   - Commit your solutions to your forked repository to track your progress
 
 3. **Practice and experiment**:
    - Modify the examples from the notes
    - Try creating your own classes
    - Combine concepts in creative ways
 
-## 🛠️ Running Your TypeScript File
+### Working with Exercises
+
+**Creating exercise files:**
+
+Option 1: CLI (Command Line Interface)
 
 ```bash
-npm run dev
+# Create your exercise file in the src/ folder
+touch src/exercise1.ts
 ```
+
+Option 2: Manually in your IDE
+
+**Running exercise files:**
+
+```bash
+# Run any exercise file directly
+npx ts-node src/exercise1.ts
+npx ts-node src/exercise2.ts
+# ... and so on
+```
+
+**Saving your work:**
+
+- Commit your exercise solutions in your **forked repository** to track your learning progress
+- Your solutions are personal - don't create PRs to submit exercise solutions
+- Focus on learning at your own pace!
 
 ## 📋 Learning Path
 

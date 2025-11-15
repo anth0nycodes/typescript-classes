@@ -1,1 +1,6 @@
 node_modules
+
+# Exercise Solutions
+# Note: If you're working on exercises in a fork, you may want to commit
+# your exercise files (src/exercise*.ts) to track your progress locally.
+# Just don't submit PRs with exercise solutions to the main repository.
