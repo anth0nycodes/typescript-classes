@@ -84,19 +84,19 @@ npm install
 
 **Creating exercise files:**
 
-Option 1: CLI (Command Line Interface)
+Create `.ts` files in the `src/` folder (either via CLI or your IDE):
 
 ```bash
-# Create your exercise file in the src/ folder
+# Via command line
 touch src/exercise1.ts
-```
 
-Option 2: Manually in your IDE
+# Or just create the file manually in your code editor
+```
 
 **Running exercise files:**
 
 ```bash
-# Run any exercise file directly
+# Run any exercise file directly with ts-node
 npx ts-node src/exercise1.ts
 npx ts-node src/exercise2.ts
 # ... and so on
