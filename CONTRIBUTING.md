@@ -2,24 +2,36 @@
 
 Thanks for your interest in contributing! This guide is meant to help developers learn TypeScript OOP concepts.
 
+> **Note:** This guide is for contributing improvements to the learning materials (new exercises, documentation updates, bug fixes, etc.). If you're a learner completing exercises, simply commit your solutions to your fork - **no PR needed**! Your exercise solutions are personal learning progress. See the README.md for learner instructions.
+
 ## How to Contribute
 
 1. **Fork** the repository
-2. **Create a branch** for your changes:
+2. **Clone your fork** to your local machine:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/typescript-oop-guide.git
+   cd typescript-oop-guide
+   ```
+3. **Set up the upstream remote** to keep your fork synced:
+   ```bash
+   git remote add upstream https://github.com/ORIGINAL-OWNER/typescript-oop-guide.git
+   git remote -v  # Verify the remotes are set up correctly
+   ```
+4. **Create a branch** for your changes:
    ```bash
    git checkout -b your-name/feature-description
    ```
-3. **Make your changes** (see guidelines below)
-4. **Test** your changes thoroughly
-5. **Commit** with a clear message:
+5. **Make your changes** (see guidelines below)
+6. **Test** your changes thoroughly
+7. **Commit** with a clear message:
    ```bash
    git commit -m "Add: brief description of changes"
    ```
-6. **Push** to your fork:
+8. **Push** to your fork:
    ```bash
    git push origin your-name/feature-description
    ```
-7. **Open a Pull Request** with a description of your changes
+9. **Open a Pull Request** with a description of your changes
 
 ## What We're Looking For
 
