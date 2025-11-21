@@ -3,6 +3,7 @@
 ## What is Encapsulation?
 
 **Encapsulation** is one of the core principles of object-oriented programming. It means:
+
 1. **Hiding** internal implementation details
 2. **Exposing** only what's necessary through a public interface
 3. **Protecting** data from direct access and modification
@@ -64,14 +65,13 @@ account2.deposit(500);        // ✅ Controlled access with validation
 
 ## Access Modifiers
 
-Access modifiers control who can access properties and methods. TypeScript provides four access levels:
+Access modifiers control who can access properties and methods. TypeScript provides three access modifiers:
 
-| Modifier | Accessible From |
-|----------|----------------|
-| `public` | Everywhere (default) |
-| `private` | Only within the same class |
+| Modifier    | Accessible From             |
+| ----------- | --------------------------- |
+| `public`    | Everywhere (default)        |
+| `private`   | Only within the same class  |
 | `protected` | Within class and subclasses |
-| `readonly` | Can read everywhere, write only during initialization |
 
 ## The `public` Modifier
 
@@ -231,7 +231,7 @@ dog.bark();                   // ✅ OK
 - Shared functionality between parent and child classes
 - When you want to allow inheritance but not external access
 
-### Access Levels Comparison
+## Access Modifiers Summary
 
 ```typescript
 class Example {
@@ -260,9 +260,9 @@ console.log(obj.publicProp);    // ✅ OK
 // console.log(obj.privateProp);   // ❌ Error
 ```
 
-## The `readonly` Modifier
+## Bonus: The `readonly` Property Modifier
 
-**Readonly** properties can only be assigned during initialization (inline or in the constructor), then become immutable.
+While not an access modifier, `readonly` is a property modifier that's often used alongside access modifiers. **Readonly** properties can only be assigned during initialization (inline or in the constructor), then become immutable.
 
 ```typescript
 class User {
@@ -315,7 +315,7 @@ console.log(config.API_URL); // ✅ "https://api.example.com"
 - Configuration values
 - Any data that should be set once and never modified
 
-## Combining Access Modifiers
+### Combining `readonly` with Access Modifiers
 
 You can combine `readonly` with access modifiers for fine-grained control:
 
@@ -368,12 +368,12 @@ class Person {
     this._email = email;
   }
 
-  // Public getter for private property
+  // Public getter method for private property
   getAge(): number {
     return this._age;
   }
 
-  // Public setter with validation
+  // Public setter method with validation
   setAge(age: number): void {
     if (age > 0 && age < 150) {
       this._age = age;
@@ -396,7 +396,7 @@ class Person {
 }
 ```
 
-**Note:** This is a convention, not enforced by TypeScript. Some teams use it, others don't.
+**Note:** This is a convention, not enforced by TypeScript. Some teams use it, others don't. Also, `getAge()` and `setAge()` are regular methods, not TypeScript's `get`/`set` accessors (which are covered in File 04).
 
 ## Best Practices
 
@@ -446,7 +446,7 @@ class Temperature {
     this.celsius = celsius;
   }
 
-  // Controlled access - can add validation/logic
+  // Accessor methods provide controlled access - can add validation/logic
   getCelsius(): number {
     return this.celsius;
   }
@@ -467,13 +467,14 @@ class Temperature {
 ## Key Takeaways
 
 1. **Encapsulation** hides implementation details and protects data
-2. **`public`** - accessible everywhere (default)
-3. **`private`** - only within the class
-4. **`protected`** - within class and subclasses
-5. **`readonly`** - can only be set during initialization
-6. **Default to private**, expose only what's necessary
-7. **Use getters/setters** for controlled access to private data
-8. **Combine modifiers** for fine-grained control
+2. TypeScript has **three access modifiers**:
+   - **`public`** - accessible everywhere (default)
+   - **`private`** - only within the class
+   - **`protected`** - within class and subclasses
+3. **`readonly`** is a property modifier (not an access modifier) that makes properties immutable after initialization
+4. **Default to private**, expose only what's necessary
+5. **Use accessor methods** (like `getValue()`/`setValue()`) for controlled access to private data
+6. **Combine `readonly` with access modifiers** for fine-grained control
 
 ## What's Next?
 
